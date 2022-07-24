@@ -12,6 +12,10 @@
   --color-blog: #042c54;
   --color-text: #81afdd;
   --color-subtext: #ff8a71;
+  --color-btn: #ff4820;
+  --white: #fff;
+  --black: #000;
+  --primary-font_size: 1.125rem;
 }
 /* gardient bg */
 .gradient__bg {
@@ -125,6 +129,7 @@ button,
 textarea,
 select {
   outline: none;
+  border: transparent;
 }
 p,
 h1,

@@ -1,0 +1,123 @@
+.gpt3__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  padding: 2rem 6rem;
+}
+
+.gpt3__navbar-link {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.gpt3__navbar-link_logo {
+  margin-right: 2rem;
+}
+
+.gpt3__navbar-link_logo img {
+  width: 62.56px;
+  height: 16.02px;
+}
+.gpt3__navbar-link_container {
+  display: flex;
+  gap: 1rem;
+}
+
+.gpt3__navbar-link,
+.gpt3__navbar-link_container li,
+.gpt3__navbar-sign {
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.gpt3__navbar-sign {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.gpt3__navbar-sign p,
+.gpt3__navbar-menu_container-links-sign p {
+  font-weight: 500;
+  font-size: 18px;
+  font-size: var(--primary-font_size);
+  margin-right: 26px;
+}
+
+.gpt3__navbar-sign button,
+.gpt3__navbar-menu_container-links-sign button {
+  background-color: var(--color-btn);
+  color: var(--white);
+  font-family: var(--font-family);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: var(--primary-font_size);
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.gpt3__navbar-menu {
+  position: relative;
+  display: none;
+}
+.gpt3__navbar-menu_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 2rem;
+  color: var(--white);
+  position: absolute;
+  text-align: end;
+  right: 0;
+  top: 40px;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.gpt3__navbar-menu_container li {
+  margin: 1rem 0;
+}
+
+.gpt3__navbar-menu_container-links-sign {
+  display: flex;
+  flex-direction: column-reverse;
+  // align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .gpt3__navbar-link_container {
+    display: none;
+  }
+  .gpt3__navbar {
+    display: flex;
+    align-items: center;
+  }
+  .gpt3__navbar-sign {
+    margin-right: 45px;
+  }
+  .gpt3__navbar-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gpt3__navbar-sign {
+    display: none;
+  }
+  .gpt3__navbar {
+    padding: 2rem 4rem;
+  }
+}
