@@ -115,6 +115,7 @@
 body {
   line-height: 1.5;
   background-color: var(--color-bg);
+  font-size: 1rem;
 }
 img,
 picture,
@@ -153,4 +154,19 @@ a {
 button {
   cursor: pointer;
   background-color: transparent;
+}
+
+.global-heading {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+.gpt3__paragrap {
+  color: var(--color-text);
+  font-weight: 500;
+  line-height: 188%;
+}
+
+.global-heading {
+  font-size: 1.5rem;
+  color: var(--white);
 }
