@@ -170,3 +170,6 @@ button {
   font-size: 1.5rem;
   color: var(--white);
 }
+.gradient__text {
+  margin: 0;
+}
